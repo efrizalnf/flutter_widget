@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:project_flutter_pertama/meet_2/ch4topic1/stateless_stateful_widget.dart';
 import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/column_widget.dart';
 import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_widget/text_widget.dart';
 import 'package:project_flutter_pertama/meet_2/ch4topic2/navigation/sliver_widget.dart';
+import 'package:project_flutter_pertama/tugas/fic_column_widget.dart';
+import 'package:project_flutter_pertama/tugas/stateless_statefull.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,11 +16,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Task FIC2',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepOrange,
       ),
-      home: SliverWidget(),
+      home: StatelessStateful(),
       // Scaffold(
       //   appBar: AppBar(
       //     title: const Text('Jago Flutter'),

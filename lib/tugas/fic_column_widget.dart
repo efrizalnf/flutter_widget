@@ -13,11 +13,12 @@ class _FICColumnWidgetState extends State<FICColumnWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Dashboard"),
-        actions: const [],
-      ),
-      body: Container()
-    );
+        appBar: AppBar(
+          title: const Text("Dashboard"),
+          actions: const [],
+        ),
+        body: Container(
+          child: Center(child: const Text('Hallo FIC')),
+        ));
   }
 }
