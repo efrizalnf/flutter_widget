@@ -17,14 +17,17 @@ class _StatelessStatefulState extends State<StatelessStateful> {
       appBar: AppBar(
         title: const Text('Date time'),
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: const [
-              TextWidget(text: 'Text Diambil dari Custom Widget'),
-              MyStatefulWidget(),
-            ],
+      body: Center(
+        child: SingleChildScrollView(
+          child: Container(
+            padding: const EdgeInsets.all(10.0),
+            child: Column(
+              children: const [
+                TextWidget(text: 'Text Diambil dari Custom Widget'),
+                SizedBox(height: 16),
+                MyStatefulWidget(),
+              ],
+            ),
           ),
         ),
       ),
@@ -47,6 +50,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       children: [
         const Text('date checker'),
         Text(dateNow),
+        const SizedBox(height: 16),
         ElevatedButton(
             onPressed: () {
               String dateChange = DateTime.now().toIso8601String();
