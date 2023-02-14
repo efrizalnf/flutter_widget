@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:project_flutter_pertama/tugas/basic-form/helper.dart';
 
 class MyFormsWidget extends StatefulWidget {
   const MyFormsWidget({Key? key}) : super(key: key);
@@ -15,12 +16,12 @@ class _MyFormsWidgetState extends State<MyFormsWidget> {
   final _formKey = GlobalKey<FormState>();
   String? form1Value;
   String? form2Value;
+  String title = 'Latihan Form';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Latihan Form'),
-      ),
+      appBar: CustomAppbar(titleValue: title),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(10.0),
@@ -35,12 +36,12 @@ class _MyFormsWidgetState extends State<MyFormsWidget> {
                   // controller: textController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: 'Name',
+                    labelText: 'Jenis Makanan',
                     labelStyle: TextStyle(
                       color: Colors.blueGrey,
                     ),
-                    hintText: 'Silahkan input nama kamu',
-                    helperText: 'Inputkan nama kamu',
+                    hintText: 'Silahkan input makanan kamu',
+                    helperText: 'Inputkan makanan kamu',
                   ),
                   onChanged: (value) {
                     setState(() {
@@ -78,6 +79,7 @@ class _MyFormsWidgetState extends State<MyFormsWidget> {
                     });
                   },
                 ),
+
                 ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {

@@ -25,13 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: MyFormsWidget(),
-      // Scaffold(
-      //   appBar: AppBar(
-      //     title: const Text('Jago Flutter'),
-      //   ),
-      //   body: const ChangeTimeWidget(),
-      // ),
+      home: const MyFormsWidget(),
     );
   }
 }
