@@ -151,7 +151,18 @@ class _MyDialogWidgetState extends State<MyDialogWidget> {
                       print('Confirmed');
                     }
                   },
-                  child: const Text('Open Bottomsheet Confirmation'))
+                  child: const Text('Open Bottomsheet Confirmation')),
+              const SizedBox(height: 20.0),
+              ElevatedButton(
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        backgroundColor: Colors.cyan,
+                        content: Text('Berhasil ditambahkan'),
+                      ),
+                    );
+                  },
+                  child: const Text('Open SnackBar'))
             ],
           ),
         ),
