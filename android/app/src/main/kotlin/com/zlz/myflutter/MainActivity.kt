@@ -1,4 +1,4 @@
-package com.example.project_flutter_pertama
+package com.zlz.myflutter
 
 import io.flutter.embedding.android.FlutterActivity
 

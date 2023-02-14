@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.project_flutter_pertama">
+    package="com.zlz.myflutter">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="Code B"
+        android:label="zlz Flutter"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

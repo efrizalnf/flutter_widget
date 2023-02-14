@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FormWidget extends StatefulWidget {
-  FormWidget({Key? key}) : super(key: key);
+  const FormWidget({Key? key}) : super(key: key);
 
   @override
   State<FormWidget> createState() => _FormWidgetState();
