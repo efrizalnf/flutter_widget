@@ -9,16 +9,20 @@ class MyExpandedWidget extends StatelessWidget {
     return Scaffold(
       appBar: const CustomAppbar(titleValue: "Expanded Widget"),
       body: Container(
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         child: Column(
           children: [
             Row(
               children: const [
                 Icon(Icons.arrow_back_ios_new),
                 Expanded(
-                    child: Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Text('List', style: TextStyle(fontSize: 16)),
+                    child: Center(
+                  child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                        style: TextStyle(fontSize: 16)),
+                  ),
                 )),
                 Icon(
                   Icons.check,
