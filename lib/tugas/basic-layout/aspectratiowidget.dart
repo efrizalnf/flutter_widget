@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:project_flutter_pertama/tugas/basic-form/helper.dart';
 
-class AspectRatioWidget extends StatelessWidget {
-  const AspectRatioWidget({super.key});
+class MyAspectRatioWidget extends StatelessWidget {
+  const MyAspectRatioWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
