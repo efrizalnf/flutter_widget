@@ -10,6 +10,8 @@ import 'package:project_flutter_pertama/tugas/basic-form/dialog_widget.dart';
 import 'package:project_flutter_pertama/tugas/basic-form/forms.dart';
 import 'package:project_flutter_pertama/tugas/basic-layout/aspectratiowidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-layout/centerwidget.dart';
+import 'package:project_flutter_pertama/tugas/basic-layout/columnwidget.dart';
+import 'package:project_flutter_pertama/tugas/basic-layout/expandedwidget.dart';
 import 'package:project_flutter_pertama/tugas/fic_column_widget.dart';
 import 'package:project_flutter_pertama/tugas/stateless_statefull.dart';
 
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: const MyCenterWidget(),
+      home: const MyExpandedWidget(),
     );
   }
 }
