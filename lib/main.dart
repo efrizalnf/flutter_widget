@@ -6,6 +6,7 @@ import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/center_wid
 import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/column_widget.dart';
 import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/listview_widget.dart';
 import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/padding_widget.dart';
+import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/sizedbox_widget.dart';
 import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_widget/text_widget.dart';
 import 'package:project_flutter_pertama/meet_2/ch4topic2/navigation/sliver_widget.dart';
 import 'package:project_flutter_pertama/tugas/basic-form/dialog_widget.dart';
@@ -18,6 +19,7 @@ import 'package:project_flutter_pertama/tugas/basic-layout/gridviewwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-layout/listviewwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-layout/paddingwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-layout/rowwidget.dart';
+import 'package:project_flutter_pertama/tugas/basic-layout/sizedboxwidget.dart';
 import 'package:project_flutter_pertama/tugas/fic_column_widget.dart';
 import 'package:project_flutter_pertama/tugas/stateless_statefull.dart';
 
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: MyRowWidget(),
+      home: MySizedBoxWidget(),
     );
   }
 }
