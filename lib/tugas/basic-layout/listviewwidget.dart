@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:project_flutter_pertama/tugas/basic-form/helper.dart';
+import 'package:syncfusion_flutter_charts/charts.dart';
+import 'package:syncfusion_flutter_charts/sparkcharts.dart';
 
 class MyListViewWidget extends StatelessWidget {
   MyListViewWidget({Key? key}) : super(key: key);
@@ -66,6 +68,55 @@ class MyListViewWidget extends StatelessWidget {
               height: 16,
             ),
             Expanded(
+              child: Builder(
+                builder: (context) {
+                  final List<Map> chartData = [
+                    {
+                      "year": "Jan",
+                      "sales": 40,
+                    },
+                    {
+                      "year": "Feb",
+                      "sales": 90,
+                    },
+                    {
+                      "year": "Mar",
+                      "sales": 30,
+                    },
+                    {
+                      "year": "Apr",
+                      "sales": 80,
+                    },
+                    {
+                      "year": "May",
+                      "sales": 90,
+                    }
+                  ];
+
+                  return Container(
+                    color: Theme.of(context).cardColor,
+                    padding: const EdgeInsets.all(12.0),
+                    child: SfCircularChart(
+                      legend: Legend(isVisible: true),
+                      series: <CircularSeries>[
+                        PieSeries<Map, String>(
+                          dataSource: chartData,
+                          dataLabelSettings: const DataLabelSettings(
+                            isVisible: true,
+                          ),
+                          xValueMapper: (Map data, _) => data["year"],
+                          yValueMapper: (Map data, _) => data["sales"],
+                        )
+                      ],
+                    ),
+                  );
+                },
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Expanded(
               child: ListView(
                 children: List.generate(category.length, (index) {
                   return GestureDetector(
@@ -93,6 +144,9 @@ class MyListViewWidget extends StatelessWidget {
                   );
                 }),
               ),
+            ),
+            const SizedBox(
+              height: 10,
             ),
             Expanded(
               child: ListView(
