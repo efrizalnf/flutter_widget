@@ -1,41 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic1/stateless_stateful_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_form/dialog_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_form/form_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/center_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/column_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/listview_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/padding_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/sizedbox_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/stack_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/wrap_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_widget/button_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_widget/circle_avatar_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_widget/image_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_widget/text_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/navigation/sliver_widget.dart';
-import 'package:project_flutter_pertama/tugas/basic-form/dialog_widget.dart';
-import 'package:project_flutter_pertama/tugas/basic-form/forms.dart';
-import 'package:project_flutter_pertama/tugas/basic-layout/aspectratiowidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-layout/centerwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-layout/columnwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-layout/expandedwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-layout/gridviewwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-layout/listviewwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-layout/paddingwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-layout/rowwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-layout/sizedboxwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-layout/stackwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-layout/wrapwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-widget/buttonwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-widget/circleavatarwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-widget/containerwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-widget/iconwidget.dart';
-import 'package:project_flutter_pertama/tugas/basic-widget/imagewidget.dart';
-import 'package:project_flutter_pertama/tugas/fic_column_widget.dart';
-import 'package:project_flutter_pertama/tugas/stateless_statefull.dart';
 
-import 'meet_2/ch4topic2/basic_layout/gridview_widget.dart';
+import 'tugas/basic-widget/textwidget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -52,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: MyImageWidget(),
+      home: MyTextsWidget(),
     );
   }
 }
