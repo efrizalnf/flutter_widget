@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project_flutter_pertama/tugas/navigation/bottom__navbar.dart';
 
+import 'meet_2/ch4topic2/navigation/bottom_navbar.dart';
 import 'tugas/basic-widget/textwidget.dart';
 
 void main() {
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: MyTextsWidget(),
+      home: MyBottomNav(),
     );
   }
 }
