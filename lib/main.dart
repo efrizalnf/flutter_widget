@@ -11,6 +11,7 @@ import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/stack_widg
 import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/wrap_widget.dart';
 import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_widget/button_widget.dart';
 import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_widget/circle_avatar_widget.dart';
+import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_widget/image_widget.dart';
 import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_widget/text_widget.dart';
 import 'package:project_flutter_pertama/meet_2/ch4topic2/navigation/sliver_widget.dart';
 import 'package:project_flutter_pertama/tugas/basic-form/dialog_widget.dart';
@@ -30,6 +31,7 @@ import 'package:project_flutter_pertama/tugas/basic-widget/buttonwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-widget/circleavatarwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-widget/containerwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-widget/iconwidget.dart';
+import 'package:project_flutter_pertama/tugas/basic-widget/imagewidget.dart';
 import 'package:project_flutter_pertama/tugas/fic_column_widget.dart';
 import 'package:project_flutter_pertama/tugas/stateless_statefull.dart';
 
@@ -50,7 +52,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: MyIconWidget(),
+      home: MyImageWidget(),
     );
   }
 }
