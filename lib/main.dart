@@ -29,6 +29,7 @@ import 'package:project_flutter_pertama/tugas/basic-layout/wrapwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-widget/buttonwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-widget/circleavatarwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-widget/containerwidget.dart';
+import 'package:project_flutter_pertama/tugas/basic-widget/iconwidget.dart';
 import 'package:project_flutter_pertama/tugas/fic_column_widget.dart';
 import 'package:project_flutter_pertama/tugas/stateless_statefull.dart';
 
@@ -49,7 +50,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: MyContainerWidget(),
+      home: MyIconWidget(),
     );
   }
 }
