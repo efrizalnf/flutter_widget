@@ -1,6 +1,3 @@
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-
 import 'package:flutter/material.dart';
 import 'package:project_flutter_pertama/tugas/basic-form/helper.dart';
 
@@ -16,9 +13,10 @@ class MyPaddingWidget extends StatelessWidget {
         width: 300,
         margin: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(
+          color: Colors.blue[700]!,
           border: Border.all(
-            width: 1.0,
-            color: Colors.grey[900]!,
+            width: 5.0,
+            color: Colors.amber[700]!,
           ),
         ),
         child: Column(

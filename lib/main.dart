@@ -17,6 +17,7 @@ import 'package:project_flutter_pertama/tugas/basic-layout/expandedwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-layout/gridviewwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-layout/listviewwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-layout/paddingwidget.dart';
+import 'package:project_flutter_pertama/tugas/basic-layout/rowwidget.dart';
 import 'package:project_flutter_pertama/tugas/fic_column_widget.dart';
 import 'package:project_flutter_pertama/tugas/stateless_statefull.dart';
 
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: MyPaddingWidget(),
+      home: MyRowWidget(),
     );
   }
 }
