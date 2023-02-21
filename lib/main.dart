@@ -12,8 +12,11 @@ import 'package:project_flutter_pertama/tugas/basic-layout/aspectratiowidget.dar
 import 'package:project_flutter_pertama/tugas/basic-layout/centerwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-layout/columnwidget.dart';
 import 'package:project_flutter_pertama/tugas/basic-layout/expandedwidget.dart';
+import 'package:project_flutter_pertama/tugas/basic-layout/gridview_widget.dart';
 import 'package:project_flutter_pertama/tugas/fic_column_widget.dart';
 import 'package:project_flutter_pertama/tugas/stateless_statefull.dart';
+
+import 'meet_2/ch4topic2/basic_layout/gridview_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +33,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: const MyExpandedWidget(),
+      home: const MyGridViewWidget(),
     );
   }
 }
