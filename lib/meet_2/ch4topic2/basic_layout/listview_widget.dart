@@ -22,7 +22,7 @@ class ListViewWidget extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: 32,
+              height: 35,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: List.generate(
@@ -34,7 +34,7 @@ class ListViewWidget extends StatelessWidget {
                         duration: const Duration(milliseconds: 150),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          color: Colors.grey,
+                          color: Colors.green[100],
                         ),
                         padding: const EdgeInsets.symmetric(
                           vertical: 8,
@@ -45,9 +45,9 @@ class ListViewWidget extends StatelessWidget {
                           categories[index],
                           textAlign: TextAlign.center,
                           style: const TextStyle(
-                            fontSize: 12,
+                            fontSize: 14,
                             color: Colors.black,
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.w600,
                             letterSpacing: 1,
                           ),
                         ),
