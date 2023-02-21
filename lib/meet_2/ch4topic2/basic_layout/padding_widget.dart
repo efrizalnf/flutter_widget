@@ -20,14 +20,14 @@ class PaddingWidget extends StatelessWidget {
           children: const [
             Padding(
               padding: EdgeInsets.only(
-                left: 20,
+                left: 50,
                 top: 30,
-                bottom: 40,
+                bottom: 10,
               ),
               child: Text(
                 'Categories',
                 style: TextStyle(
-                  fontSize: 16.0,
+                  fontSize: 100.0,
                   fontWeight: FontWeight.w500,
                 ),
               ),

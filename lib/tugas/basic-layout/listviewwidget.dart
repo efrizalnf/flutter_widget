@@ -121,26 +121,27 @@ class MyListViewWidget extends StatelessWidget {
                 children: List.generate(category.length, (index) {
                   return GestureDetector(
                     child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 200),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20.0),
-                          color: Colors.greenAccent,
+                      duration: const Duration(milliseconds: 200),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20.0),
+                        color: Colors.greenAccent,
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 9,
+                        horizontal: 24,
+                      ),
+                      margin: const EdgeInsets.symmetric(
+                        horizontal: 15,
+                        vertical: 4,
+                      ),
+                      child: Text(
+                        category[index],
+                        style: const TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
                         ),
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 9,
-                          horizontal: 24,
-                        ),
-                        margin: const EdgeInsets.symmetric(
-                          horizontal: 15,
-                          vertical: 4,
-                        ),
-                        child: Text(
-                          category[index],
-                          style: const TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        )),
+                      ),
+                    ),
                   );
                 }),
               ),
