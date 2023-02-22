@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 import 'navigation_pop.dart';
 
 class NavigationPush extends StatefulWidget {
