@@ -8,7 +8,7 @@ class MySliverWidget extends StatefulWidget {
   State<MySliverWidget> createState() => _MySliverWidgetState();
 }
 
-List products = [
+List<Map> products = [
   {
     "id": 1,
     "photo":
@@ -174,22 +174,52 @@ final List<String> categories = [
   'Kitchen'
 ];
 
-SliverList _getSlivers(List myList, BuildContext context) {
+SliverList _getSlivers(
+    List myList, String category, String photo, BuildContext context) {
   return SliverList(
     delegate: SliverChildBuilderDelegate(
       (BuildContext context, int index) {
-        return buildRow(myList[index]);
+        return buildRow(myList[index]["product_name"], myList[index][category],
+            myList[index][photo]);
       },
       childCount: myList.length,
     ),
   );
 }
 
-buildRow(String title) {
-  return Padding(
-      padding: const EdgeInsets.all(15.0),
-      child: Text(title,
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0)));
+buildRow(String product, String price, String photo) {
+  return Card(
+    child: Container(
+        padding: const EdgeInsets.all(16),
+        child: Row(
+          children: [
+            CircleAvatar(
+              radius: 28.0,
+              backgroundImage: NetworkImage(
+                photo,
+              ),
+            ),
+            const SizedBox(
+              width: 15,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  product,
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 18.0),
+                ),
+                Text(
+                  price,
+                  style: const TextStyle(
+                      fontWeight: FontWeight.normal, fontSize: 14.0),
+                ),
+              ],
+            ),
+          ],
+        )),
+  );
 }
 
 class _MySliverWidgetState extends State<MySliverWidget> {
@@ -203,23 +233,25 @@ class _MySliverWidgetState extends State<MySliverWidget> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            // stretch: true,
-            leading: const Icon(
-              Icons.arrow_back,
-              size: 24.0,
-            ),
+            leadingWidth: 0,
+            // leading: Container(),
+
             pinned: pinned,
             snap: snap,
             floating: floating,
             expandedHeight: 160,
             flexibleSpace: FlexibleSpaceBar(
-              centerTitle: true,
-              title: const Text(
-                "Sliver App Bar",
-                style: TextStyle(
-                  fontSize: 14.0,
-                  color: Colors.black87,
-                  fontWeight: FontWeight.bold,
+              // centerTitle: true,
+              titlePadding: const EdgeInsets.symmetric(horizontal: 3),
+              title: const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  "Sliver App Bar",
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    color: Colors.black87,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
               background: Image.network(
@@ -230,7 +262,7 @@ class _MySliverWidgetState extends State<MySliverWidget> {
               ),
             ),
           ),
-          _getSlivers(categories, context)
+          _getSlivers(products, "category", "photo", context)
         ],
       ),
     );
