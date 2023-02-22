@@ -9,6 +9,7 @@ import 'meet_2/ch4topic2/navigation/bottom_navbar.dart';
 import 'tugas/basic-widget/textwidget.dart';
 import 'tugas/navigation/drawer__widget.dart';
 import 'tugas/navigation/navigation__push.dart';
+import 'tugas/navigation/sliver__widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: MyNavPushWidget(),
+      home: MySliverWidget(),
     );
   }
 }
